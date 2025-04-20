@@ -30,6 +30,7 @@
     text-decoration: none;
     color: #111;
     font-weight: 500;
+    
   }
 
   .get-started-button {
@@ -183,6 +184,12 @@
     height: 420px;
     border-radius: 24px;
   }
+
+  .upload-button img {
+    width: 18px;
+    height: 18px;
+      }
+
   .upload-text {
     max-width: 495px;
     text-align: left;
@@ -206,6 +213,12 @@
     cursor: pointer;
   }
 
+  .upload-icon {
+    width: 18px;
+    height: 18px;
+    
+  }
+
   footer {
     background: #fff;
     padding: 20px;
@@ -226,13 +239,41 @@
   }
 
 
-  @media (max-width: 768px) {
+  @media only screen (max-width: 360px) {
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      display: none;
+      
+    }
+
     .hero {
+      flex-direction:column-reverse;
+      text-align:center;
+    }
+
+    .hero-image, .hero-text {
+      max-width: 100%;
+    }
+
+    .section.purple-bg {
+    justify-content: center;
+    }
+
+    .cards {
       flex-direction: column;
       text-align: center;
     }
+   
+    
+    .footer p {
+      margin: 4px;
+      text-align: right;
+    flex-direction:column-reverse;
+      text-align:center;
 
-    .hero-text, .hero-image {
-      max-width: 100%;
     }
   }
