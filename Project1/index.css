@@ -239,14 +239,14 @@
   }
 
 
-  @media only screen (max-width: 360px) {
+  @media  (max-width: 360px) {
 
     nav a {
       margin-left: 1.5rem;
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-      display: none;
+      text-decoration:none;
+      color:#111;
+      font-weight:500;
+      display:none;
       
     }
 
