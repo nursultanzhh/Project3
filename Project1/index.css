@@ -3,42 +3,52 @@
       font-family: "Kanit", sans-serif;
       font-weight: 400;
       font-style: normal;
-      }
 
   header {
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: c;
     padding-top: 12px;
     padding-right: 80px;
     padding-bottom: 12px;
     padding-left: 80px;
-    Gap: 748px;
     background-color: #ffffff;
     box-shadow: 0 1px 5px rgba(0,0,0,0.05);    
   }    
 
-
-
   .logo {
     font-weight: bold;
     font-size: 1.2rem;
+    justify-content: left;
   }
 
-  nav a {
+  .navbar {
+    display: flex;
+    justify-content: right;
+           
+  }
+ 
+  .navbar>a{
+    display: flex;
     margin-left: 1.5rem;
     text-decoration: none;
     color: #111;
     font-weight: 500;
+    padding: 0.5rem 1rem;
     
   }
 
   .get-started-button {
-    background-color: #e2e8f0;
+    background-color: #e2e8f0; 
+    color: #1e293b; 
+    font-weight: 600;
     padding: 0.5rem 1rem;
-    border-radius: 999px;
-    font-weight: 500;
-  }
+    border: none;
+    border-radius: 9999px; 
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    }
 
   .hero {
     display: flex;
@@ -75,13 +85,15 @@
   }
 
   .hero-image {
-    flex: 1;
-    max-width: 500px;
-    margin-top: 2rem;
+    width: 687px;
+    height: 458px;
+    top: -12px;
+    left: 34px
+   
   }
 
   .hero-image img {
-    width: 100%;
+    
     border-radius: 20px;
   }
 
@@ -98,7 +110,7 @@
   .section.purple-bg {
     background-color: #eae6f9;
     border-radius: 24px;
-    margin: 40px 20px;
+    margin 0;
   }
   .section h2 {
     font-size: 32px;
@@ -108,7 +120,8 @@
   .cards {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    justify-content: space-between;
+    
   }
   .card {
     width: 200px;
@@ -130,7 +143,9 @@
     padding-right: 80px;
     padding-bottom: 100px;
     padding-left: 80px;
-            
+    background-color:rgb(241, 241, 241);
+    
+               
   }
   .get-started h2 {
     font-size: 28px;
@@ -174,10 +189,11 @@
   .upload-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 40px;
     flex-wrap: wrap;
-    padding: 60px 20px;
+    padding: 10px 20px;
+  
   }
   .upload-section img {
     width: 619px;
@@ -238,15 +254,22 @@
     text-align: right;
   }
 
-  @media  (max-width: 360px) {
+  @media only screen and (max-width: 900px) {
 
-    nav a {
+    .navbar a:not(.get-started-button) {
+      display: grid;
       margin-left: 1.5rem;
-      text-decoration:none;
-      color:#111;
-      font-weight:500;
-      display:none;
-      
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      display: none;      
+    }
+
+    .get-started-button {
+      background-color: #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: 500;
     }
 
     .hero {
@@ -254,10 +277,10 @@
       text-align:center;
     }
 
-    .hero-image, .hero-text {
-      max-width: 100%;
+    .hero-image {
+      width: 600px;;
+      height: auto;
     }
-
     .section.purple-bg {
     justify-content: center;
     }
@@ -265,14 +288,115 @@
     .cards {
       flex-direction: column;
       text-align: center;
+      align-items: center;
     }
    
+    .upload-section img {
+      width: 420px;
+      height: 300px;
+      border-radius: 24px;
+    }
     
     .footer p {
       margin: 4px;
       text-align: right;
-    flex-direction:column-reverse;
+      flex-direction:column-reverse;
+      text-align:center;
+
+    }
+
+    .footer nav {
+      margin: 4px;
+      flex-direction:column-reverse;
       text-align:center;
 
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    .hero-image img {
+      width:312px;
+      height: 210;
+      border-radius: 32px;
+    }
+
+    .hero-image {
+      width: 360px;;
+      height: auto;
+    }
+
+    .search-box {
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      margin-top: 20px;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      gap: 20px;    
+    }
+
+    .search-box input {    
+      height: 50px;
+      width: 300px;
+      border: 1px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+  
+    .upload-section img {
+      width: 312px;
+      height: 210px;
+      border-radius: 24px;
+    }
+
+    .upload-text h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .upload-text p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+      margin-bottom: 1rem;
+    }
+  
+    .hero-text p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    footer nav {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: left; 
+    }
+
+    footer nav a {
+      font-size: 20px;
+      margin: 0 10px;
+      color: #000;      
+  }
+
+  footer p {
+    margin: 4px;
+    text-align: left;
+  }
+
+
+}
+
+
+  
+
+ 
+ 
+
+  
