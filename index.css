@@ -1,0 +1,402 @@
+  body {
+    margin: 0;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+
+  header {
+    display:flex;
+    justify-content: space-between;
+    align-items: c;
+    padding-top: 12px;
+    padding-right: 80px;
+    padding-bottom: 12px;
+    padding-left: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);    
+  }    
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    justify-content: left;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: right;
+           
+  }
+ 
+  .navbar>a{
+    display: flex;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    
+  }
+
+  .get-started-button {
+    background-color: #e2e8f0; 
+    color: #1e293b; 
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 9999px; 
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6%;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+
+  .hero-text button {
+    background-color: #6a0ef3;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .hero-image {
+    width: 687px;
+    height: 458px;
+    top: -12px;
+    left: 34px
+   
+  }
+
+  .hero-image img {
+    
+    border-radius: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .section.purple-bg {
+    background-color: #eae6f9;
+    border-radius: 24px;
+    margin 0;
+  }
+  .section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+  }
+  .card {
+    width: 200px;
+  }
+  .card h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: cursive;
+  }
+  .card p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
+  .get-started {
+      
+    padding-top: 100px;
+    padding-right: 80px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    background-color:rgb(241, 241, 241);
+    
+               
+  }
+  .get-started h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .get-started p {
+    font-size: 14px;
+    max-width: 600px;
+   
+  }
+  .search-box {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+  }
+  .search-box input {
+    
+    height: 50px;
+    width: 619px;
+    border: 1px solid #ffffff;
+    border-radius: 12px 0 0 12px;
+    font-size: 14px;
+  }
+  .search-box button {
+    background-color: #6a0fff;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px; 
+    width: 106;
+    height: 50;
+    gap: 10px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    border: none;
+  }
+
+  .upload-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  
+  }
+  .upload-section img {
+    width: 619px;
+    height: 420px;
+    border-radius: 24px;
+  }
+
+  .upload-button img {
+    width: 18px;
+    height: 18px;
+      }
+
+  .upload-text {
+    max-width: 495px;
+    text-align: left;
+  }
+  .upload-text h3 {
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .upload-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .upload-text button {
+    background-color: #6a0fff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .upload-icon {
+    width: 18px;
+    height: 18px;
+    
+  }
+
+  footer {
+    background: #fff;
+    padding: 20px;
+    font-size: 12px;
+  }
+  footer nav {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  footer nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  footer p {
+    margin: 4px;
+    text-align: right;
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    .navbar a:not(.get-started-button) {
+      display: grid;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      display: none;      
+    }
+
+    .get-started-button {
+      background-color: #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+
+    .hero {
+      flex-direction:column-reverse;
+      text-align:center;
+    }
+
+    .hero-image {
+      width: 600px;;
+      height: auto;
+    }
+    .section.purple-bg {
+    justify-content: center;
+    }
+
+    .cards {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+   
+    .upload-section img {
+      width: 420px;
+      height: 300px;
+      border-radius: 24px;
+    }
+    
+    .footer p {
+      margin: 4px;
+      text-align: right;
+      flex-direction:column-reverse;
+      text-align:center;
+
+    }
+
+    .footer nav {
+      margin: 4px;
+      flex-direction:column-reverse;
+      text-align:center;
+
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .hero-image img {
+      width:312px;
+      height: 210;
+      border-radius: 32px;
+    }
+
+    .hero-image {
+      width: 360px;;
+      height: auto;
+    }
+
+    .search-box {
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      margin-top: 20px;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      gap: 20px;    
+    }
+
+    .search-box input {    
+      height: 50px;
+      width: 300px;
+      border: 1px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+  
+    .upload-section img {
+      width: 312px;
+      height: 210px;
+      border-radius: 24px;
+    }
+
+    .upload-text h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .upload-text p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+      margin-bottom: 1rem;
+    }
+  
+    .hero-text p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    footer nav {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: left; 
+    }
+
+    footer nav a {
+      font-size: 20px;
+      margin: 0 10px;
+      color: #000;      
+  }
+
+  footer p {
+    margin: 4px;
+    text-align: left;
+  }
+
+
+}
+
+
+  
+
+ 
+ 
+
+  
